@@ -1,0 +1,154 @@
+html, body, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	border: 0 none;
+	font: inherit;
+	margin: 0;
+	padding: 0;
+	font-size:14px;
+	font-family:Helvetica neue, Helvetica, Arial, sans-serif;
+	line-height:18px;
+	
+}
+* {
+	border: medium none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	outline:none;
+	background-repeat:no-repeat;
+	position:relative;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box
+}
+*:focus {
+	outline: 0;
+}
+ 
+@font-face {
+	font-family:'Helvetica Neue';
+	src: url('../fonts/HelveticaNeue.eot');
+	src: url('./fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),url('../fonts/HelveticaNeue.woff2') format('woff2'),url('../fonts/HelveticaNeue.woff') format('woff'),url('../fonts/HelveticaNeue.ttf') format('truetype'),url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+ 
+
+@font-face {
+	font-family:'HelveticaNeue-Bold';
+	src: url('../fonts/HelveticaNeue-Bold.eot');
+	src: url('../fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),url('../fonts/HelveticaNeue-Bold.woff2') format('woff2'),url('../fonts/HelveticaNeue-Bold.woff') format('woff'),url('../fonts/HelveticaNeue-Bold.ttf') format('truetype'),url('../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+ font-family: 'helvetica25UltraLightRegular';
+ src: url('../fonts/helveticaultralt.eot');
+ src: url('../fonts/helveticaultralt.eot?#iefix') format('embedded-opentype'),  url('../fonts/helveticaultralt.woff') format('woff'),  url('../fonts/helveticaultralt.ttf') format('truetype'),  url('../fonts/helveticaultralt.svg#HelveticaNeue') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueThin';
+    src: url('../fonts/HelveticaNeueThin.eot');
+    src: url('../fonts/HelveticaNeueThin.eot') format('embedded-opentype'),
+         url('../fonts/HelveticaNeueThin.woff2') format('woff2'),
+         url('../fonts/HelveticaNeueThin.woff') format('woff'),
+         url('../fonts/HelveticaNeueThin.ttf') format('truetype'),
+         url('../fonts/HelveticaNeueThin.svg#HelveticaNeueThin') format('svg');
+}
+
+
+@font-face {
+    font-family: 'HelveticaNeueLTStdTh';
+    src: url('../fonts/HelveticaNeueLTStdTh.eot');
+    src: url('../fonts/HelveticaNeueLTStdTh.eot') format('embedded-opentype'),
+         url('../fonts/HelveticaNeueLTStdTh.woff2') format('woff2'),
+         url('../fonts/HelveticaNeueLTStdTh.woff') format('woff'),
+         url('../fonts/HelveticaNeueLTStdTh.ttf') format('truetype'),
+         url('../fonts/HelveticaNeueLTStdTh.svg#HelveticaNeueLTStdTh') format('svg');
+}
+
+ 
+ 
+
+html {
+	position:static;
+	width:100%;
+	height:100%;
+}
+
+body {
+	margin:0;
+	padding:0;
+	color:#35384a;
+	background:#fff;
+	
+	
+}
+/*---------------------Default styles ------------------*/
+a {
+	color:#35384a;
+	text-decoration: none;
+	outline:none;
+}
+strong {
+	font-weight:bold;
+}
+a:hover {
+	color:#fa5422;
+}
+a:active {
+	outline:none !important;
+}
+img {
+	border:none;
+	max-width: 100%;
+}
+ul, li {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a:focus {
+    outline: none;
+    outline: none;
+    outline-offset: 0px;
+}
+.clear {
+	clear:both;
+}
+.clear10 {
+	clear:both;
+	height:10px;
+}
+.clear20 {
+	clear:both;
+	height:20px;
+}
+.clear30 {
+	clear:both;
+	height:30px;
+}
+.clear40 {
+	clear:both;
+	height:40px;
+}
+.clear22 {
+	clear: both;
+	height: 18px;
+}
+.clear62 {
+	clear: both;
+	height: 62px;
+}
+
+h1, h2, h3, blockquote {
+    text-rendering: optimizelegibility;
+	-moz-text-rendering: optimizelegibility;
+	-webkit-text-rendering: optimizelegibility;
+}

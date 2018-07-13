@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>:: FASTBASE CRM ::</title>
+<!-- Bootstrap -->
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/common.css" rel="stylesheet">
+<link href="assets/css/styles.css" rel="stylesheet">
+<link href="assets/css/login.css" rel="stylesheet">
+<link href="assets/css/selectbox.css" rel="stylesheet" type="text/css">
+<link href="assets/css/fileupload.css" rel="stylesheet" type="text/css">
+<link href="assets/css/media.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="loginbgds">
+<div class="container">
+  <div class="row loginview">
+    <div class="loginmiddle signupmain">
+    <div class="fblogologin"><a href="#" class="fblogo"><img src="assets/images/fblogo-white.png"/></a></div>
+      <div class="form">
+      <div class="layer"></div>
+       <div class="layertop">
+        <!--Tab Group-->
+        <ul class="tab-group">
+          <li class="tab active"><a href="#login">Sign Up</a></li>
+        </ul>
+        <!--End Tab Group-->
+        <!--Login-->
+          <div id="login">
+            <form action="#" method="post">
+             <div class="top-row">
+              <div class="field-wrap">
+                <label>Title <!--<span class="req">*</span>--></label>
+                  <!--Select Box-->
+                   <select id="Select-Title">
+                      	<option selected="selected" value="Mr">Mr</option>
+						<option value="Mrs">Mrs</option>
+						<option value="Ms">Ms</option>
+                  </select>
+                  <!--End Select Box-->
+              </div>
+              <div class="field-wrap">
+                <label>First Name</label>
+                <input type="text" autocomplete="off"/>
+              </div>
+              <div class="field-wrap">
+                <label>Last Name</label>
+                <input type="text" autocomplete="off"/>
+              </div>
+              </div>
+              
+              <div class="top-row">
+              
+              <div class="field-wrap">
+                <label>Email</label>
+                <input type="text" autocomplete="off"/>
+              </div>
+              <div class="field-wrap">
+                <label>Password</label>
+                <input type="password" autocomplete="off"/>
+              </div>
+              <div class="field-wrap">
+                <label>Role</label>
+                <!--Select Box-->
+                   <select id="Select-Role">
+                      		<option selected="selected" value="-Select-">-Select-</option>
+							<option value="1">Administrator</option>
+							<option value="2">Business Development Manager</option>
+							<option value="3">Business Development Executive</option>
+							<option value="4">Caller</option>
+							<option value="5">Data Researcher</option>
+							<option value="6">Business Analyst</option>
+                  </select>
+                  <!--End Select Box-->
+              </div>
+              </div>
+              
+              <div class="top-row">
+              <div class="field-wrap">
+                <label>Reporting</label>
+                <!--Select Box-->
+                   <select id="Select-Reporting">
+                        <option selected="selected" value="-Select-">-Select-</option>
+						<option value="6">Admin Admin</option>
+						<option value="29">Business Manager</option>
+                  </select>
+                  <!--End Select Box-->
+              </div>
+              <div class="field-wrap">
+               <label>Is Active?</label>
+                  <div class="checkbox checkbox-primary">
+                 <input id="checkbox2" type="checkbox">
+                 <label for="checkbox2">Yes/no</label>
+                </div> 
+              </div>
+              <div class="field-wrap">
+                <label>Mobile No</label>
+                <input type="text" autocomplete="off"/>
+              </div>
+              </div>
+ 
+              <div class="top-row">
+              
+              <div class="field-wrap">
+                <label>Personal Email</label>
+                <input type="password" autocomplete="off"/>
+              </div>
+               <div class="field-wrap">
+                <label>Phone No</label>
+                <input type="text" autocomplete="off"/>
+              </div>
+              <div class="field-wrap">
+                <label>Birth Date</label>
+                <input type="password" autocomplete="off"/>
+              </div>
+              </div>
+              
+ 
+               <div class="top-row">
+                 <div class="field-wrap">
+                  <label>Address</label>
+                  <textarea name="txtAddress" rows="1" cols="20" id="content_txtAddress" class="" style="height:120px;"></textarea>
+                 </div>
+				 <div class="field-wrap fileup">
+                  <label>Member Avatar</label>
+                  
+				   <div class="uploadBox">
+            <fieldset class="form-group">
+                <a href="javascript:void(0)" onClick="$('#pro-image').click()">Choose File</a>
+                <input type="file" id="pro-image" name="pro-image" style="display: none;" class="form-control" multiple>
+                <button class="button button-block uploadbtn"/>Upload</button>
+            </fieldset>
+            <div class="preview-images-zone">
+         
+            </div>
+         </div>
+                 </div>
+               </div>    
+               <div class="top-row">   
+                 <div class="field-wrap"> 
+                  <button class="button button-block"/>Save</button>
+                </div>
+                <div class="field-wrap"> 
+                  &nbsp;
+                </div>
+                <div class="field-wrap"> 
+                  <button class="button button-block"/>Cencel</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--End Login-->
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.selectbox.js"></script>
+<script src="assets/js/fileupload.js"></script>
+
+<!-- jQuery easing plugin -->
+<script type="text/javascript">
+$(document).ready(function(){
+//Select Box It
+$("#Select-Title").selectBoxIt();
+$("#Select-Role").selectBoxIt();
+$("#Select-Reporting").selectBoxIt();
+
+$('.form').find('input, textarea').on('keyup blur focus', function (e) {
+  
+  var $this = $(this),
+      label = $this.prev('label');
+
+	  if (e.type === 'keyup') {
+			if ($this.val() === '') {
+          label.removeClass('active highlight');
+        } else {
+          label.addClass('active highlight');
+        }
+    } else if (e.type === 'blur') {
+    	if( $this.val() === '' ) {
+    		label.removeClass('active highlight'); 
+			} else {
+		    label.removeClass('highlight');   
+			}   
+    } else if (e.type === 'focus') {
+      
+      if( $this.val() === '' ) {
+    		label.removeClass('highlight'); 
+			} 
+      else if( $this.val() !== '' ) {
+		    label.addClass('highlight');
+			}
+    }
+
+});
+
+ 
+
+});	
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+.flat-toggle {
+    width: 36px;
+    border-radius: 30px;
+    height: 22px;
+    background-color: #c3c3c3;
+    position: relative;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    float: left;
+    top: 0px;
+    left:10px;
+	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+   -moz-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+   -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flat-toggle:after {
+    border-radius: 100%;
+    background-color: #fff;
+    position: absolute;
+    left:2px;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    content: '';
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translateX(0);
+     transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.flat-toggle > span {
+    margin-left: -70px;
+    position: relative;
+    top: 0px;
+    /*color: #666;*/
+    white-space: nowrap;
+    display: block;
+    cursor: pointer;
+	font-size: 15px;
+	line-height:20px;
+}
+
+.flat-toggle:hover {
+    cursor: pointer;
+}
+
+.flat-toggle:hover span {
+    color: #000;
+    cursor: pointer;
+}
+
+.flat-toggle > small {
+    margin-left: -45px;
+    position: relative;
+    top: -2px;
+    /*color: #666;*/
+    white-space: nowrap;
+    display: block;
+    cursor: pointer;
+}
+
+.flat-toggle.on {
+    background-color: #78ca9d;
+}
+
+.flat-toggle.on:hover span {
+    /*color: #00A3D9;*/
+    cursor: pointer;
+}
+
+.flat-toggle.on:after {
+    background-color: #fff;
+    -webkit-transform: translate(17px);
+    -ms-transform: translate(17px);
+    transform: translateX(17px);
+	left:-1px;
+}
+
+.flat-toggle.on > span {
+    color: #0085bb;
+}

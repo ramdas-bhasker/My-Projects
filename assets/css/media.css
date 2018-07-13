@@ -1,0 +1,770 @@
+@media (max-width:3000px) { 
+ ul.thumbs li {
+    width: 19.3%;
+}
+ .track .img-block .middle .logoview {
+    min-height: 66px;
+}
+.track .img-block .middle .clientnames {
+    height: 46px;
+}
+.track .img-block {
+ height: 206px;
+}
+.largepopup {
+ width:40%;
+  margin-left:-18%;
+} 
+.hotellipse .leadscountbox {
+ line-height:20px;
+}
+
+.adjstForm {
+   width: 60% !important;
+}
+.adjstForm .whitebg {
+    background: url(../images/step-top-bg.png) left 2px no-repeat;
+	background-size: 100%;
+}
+
+.member-box
+{
+height:240px !important;
+}
+
+.loginview .form .layer {
+ background:url(../images/new-login-bg1.jpg) no-repeat 52% 40px fixed;
+ 
+}
+
+ul.toplogin.top-rt-mrg {
+    right: 40px;
+}
+.createTop .expanding.lead-rt-mrg {
+    margin-right: 38px;
+}
+
+}
+
+@media (max-width:2500px) {
+ .adjstForm .whitebg {
+    background: url(../images/step-top-bg.png) left 6px no-repeat;
+	background-size: 100%;
+}
+}
+
+
+@media (max-width:2000px) { 
+ ul.thumbs li {
+    width: 32.3%;
+}
+
+.track .img-block .middle .logoview {
+    min-height: 70px;
+}
+.track .img-block .middle .clientnames {
+    height: 50px;
+}
+.track .img-block {
+ height: 210px;
+}
+.largepopup {
+ width:50%;
+  margin-left:-24%;
+} 
+
+.hotellipse .leadscountbox {
+ line-height:22px;
+}
+ 
+
+.adjstForm {
+   width: 72% !important;
+}
+.adjstForm .whitebg {
+    background: url(../images/step-top-bg.png) left 6px no-repeat;
+	background-size: 100%;
+}
+
+.member-box
+{
+height:240px !important;
+}
+
+
+}
+
+@media (max-width:1600px) { 
+ ul.thumbs li {
+    width: 32%;
+}
+
+.track .img-block .middle .logoview {
+    min-height: 76px;
+} 
+.track .img-block .middle .clientnames {
+    height: 50px;
+}
+
+.track .img-block {
+height: 220px;
+}
+
+.largepopup {
+ width:60%;
+  margin-left:-28%;
+} 
+.hotellipse .leadscountbox {
+ line-height:22px;
+}
+
+.loginmiddle {
+    width: 50%;
+}
+
+.member-box
+{
+height:240px !important;
+}
+.adjstForm .whitebg {
+    background: url(../images/step-top-bg.png) left 6px no-repeat;
+	background-size: 100%;
+}
+
+}
+
+@media (max-width:1440px) { 
+ ul.thumbs li {
+    width:32%;
+}
+.track .img-block {
+ height:242px;
+}
+
+.track .img-block .middle .logoview {
+    min-height: 90px;
+}
+
+.track .img-block .middle .clientnames {
+    height: 70px;
+}
+.largepopup {
+ width:60%;
+  margin-left:-28%;
+} 
+
+.hotellipse .leadscountbox {
+ line-height:22px;
+}
+
+.loginmiddle {
+    width: 40%;
+}
+.adjstForm {
+   width: 100% !important;
+   margin: 0 auto;
+}
+
+.member-box
+{
+height:240px !important;
+}
+
+.adjstForm .whitebg {
+    background: url(../images/step-top-bg.png) left 6px no-repeat;
+	background-size: 100%;
+}
+.loginview .form .layer {
+ background:url(../images/new-login-bg1.jpg) no-repeat 55% 30px fixed;
+ background-size: auto 100%; 
+}
+ 
+ul.toplogin.top-rt-mrg {
+	right: 23px;
+}
+
+.createTop .expanding.lead-rt-mrg {
+    margin-right: 20px;
+}
+}
+@media (max-width:1300px) {
+
+ul.thumbs li {
+    width: 31.6%;
+}
+.select-assign .callassignbox {
+    width: 70%;
+}
+.select-assign {
+    width: 30%;
+}
+.createTop.assigntop ul.creatbutns {
+    width: 17%;
+ }
+.createTop .expanding {
+    width: 38%;
+}
+}
+
+@media (max-width:1200px) { 
+ ul.thumbs li {
+    width: 30%;
+}
+
+.adjstForm .whitebg {
+    background: url(../images/step-top-bg.png) left 13px no-repeat;
+	background-size: 100%;
+}
+#progressbar {
+    width: 62%;
+}
+
+.maintabsBox > .nav-tabs > li > a
+{
+font-size:16px;
+}
+
+
+}
+
+@media (max-width:1024px) { 
+ .crmbackground {
+ overflow:visible;
+}
+
+.maintabsBox > .nav-tabs > li {
+    margin-right: 3%;
+}
+.innertabssliderBox {
+    width: 95.4%;
+    margin: 20px 2.4%;
+}
+#progressbar {
+    width: 70%;
+}
+.adjstForm .whitebg {
+    padding-top: 25px;
+	background-size: 100%;
+}
+.fielddata {
+    padding: 20px 30px 0px 30px;
+	position:relative;
+}
+.adjstForm fieldset {
+ height:auto;
+}
+.adjstForm .previous.action-button {
+    bottom: -50px;
+    left: 0px;
+    top: auto;
+}
+
+.adjstForm .next.action-button {
+    bottom: -50px;
+    right: 0px;
+	top: auto;
+}
+
+.adjstForm .continue.action-button {
+    bottom: -50px;
+    left: 30%;
+    top: auto;
+}
+.adjstForm .save.action-button {
+    bottom: -50px;
+    right: 0px;
+	top: auto;
+}
+
+
+ul.formLists li {
+    margin-bottom: 30px;
+}
+ul.formLists {
+    padding: 12px 0px 0px;
+}
+
+.fourthtab .lft {
+    width: 100%;
+}
+.emp_scroll {
+    height: 345px !important;
+    width: 100%;
+}
+.fourthtab .rtd {
+    width: 100%;
+}
+
+
+ul.thumbs li {
+    width: 48%;
+}
+.gallerypagination {
+    width: 36%;
+}
+.createTop ul.creatbutns {
+    width: 63%;
+}
+.createTop .expanding {
+    width: 37%;
+}
+
+.largepopup {
+    width: 80%;
+    margin-left: -38%;
+}
+
+
+.createTop.payselect .selectpaybox {
+    width: 25%;
+}
+.createTop.payselect .selectpaybox{
+    margin-bottom: 10px;
+}
+
+.adjstForm .whitebg {
+   background: url(../images/step-top-bg.png) left 8px no-repeat;
+   background-size: 100%;
+}
+
+.mbviewscl {
+ width:100%;
+ display:inline-block;
+ overflow-y:hidden;
+ padding-bottom: 60px;
+
+}
+.mbscroll {
+ width:1200px;
+ display:inline-block;
+}
+
+}
+
+@media (max-width:880px) { 
+ 
+.adjstForm .whitebg {
+   background: url(../images/step-top-bg.png) left 10px no-repeat;
+   background-size: 100%;
+}
+#progressbar {
+    width: 80%;
+}
+.maintabsBox > .nav-tabs > li > a {
+    font-size: 12px;
+}
+ 
+}
+
+
+@media (max-width:768px) { 
+ 
+ 
+#progressbar {
+    width: 90%;
+}
+
+ul.formLists li .inputLists .checkinput {
+    position: relative;
+}
+.fourthtab .lft .contactpersn {
+    padding-left: 0px;
+}
+.maintabsBox > .nav-tabs > li {
+    margin-right: 2%;
+}
+.maintabsBox > .nav-tabs > li > a {
+    font-size: 13px;
+}
+
+ul.thumbs li {
+    margin: 0px 0px 14px 0;
+    width: 100%;
+}
+
+.createTop ul.creatbutns {
+    width: 100%;
+}
+.createTop ul.creatbutns li:last-child {
+ margin-right:0px;
+}
+
+.createTop {
+    padding-right: 0px;
+}
+
+.createTop .expanding {
+    width: 71%;
+    float: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.createTop .expanding .custom-search input {
+    width: 38px;
+    height: 38px;
+    padding-right: 27px;
+	background-position:80% center;
+}
+
+.gallerypagination {
+    width: 60%;
+	left: 22%;
+}
+
+.largepopup {
+    height: 40%;
+}
+.largepopup .innerpopup .innermiddle .clientnames {
+    line-height: 30px;
+    font-size: 26px;
+    letter-spacing: 2.2px;
+    height: 66px;
+    padding-right: 0%;
+}
+
+.largepopup .innerpopup .innermiddle dl.clientinfo {
+    margin: 14px 0px 30px 0px;
+}
+
+.createTop.payselect .selectpaybox {
+    width: 31%;
+}
+
+.loginmiddle {
+    width: 60%;
+}
+
+.adjstForm .createdBox {
+    position: relative;
+    right: 0px;
+    display: block;
+    top: 0px;
+    margin: 0 auto;
+    padding-bottom: 12px;
+}
+.adjstForm .createdBox .createdtext {
+    display: block;
+    line-height: 18px;
+    text-align: center;
+    padding-bottom: 2px;
+}
+.adjstForm .whitebg {
+    padding-top: 18px;
+    background-size: 100%;
+}
+
+.adjstForm .whitebg {
+   background: url(../images/step-top-bg.png) left 6px no-repeat;
+   background-size: 100%;
+}
+}
+
+
+
+@media (max-width:767px) { 
+
+.navbar-header {
+    width: 100%;
+    background: #FFFFFF;
+    padding: 20px 15px 20px 15px;
+}
+.navbar-brand {
+    padding: 8px 0px 0px 0px;
+    background: transparent;
+    height: auto;
+    width: 50%;
+}
+
+.navbar-toggle {
+  float: left;
+  margin:0px 16px 0px 0px;
+  z-index: 9;
+} 
+ 
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #36394c;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #36394c;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #959bba;
+} 
+ul.toplogin {
+    margin-right: 0px !important;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 9;
+}
+ul.toplogin li {
+    width: 27px !important;
+}
+
+ul.toplogin li .userimg {
+    width: auto;
+    height: auto;
+    display: inline-block;
+	padding: 22px 0px 4px 0px;
+	color:#36394c;
+}
+ul.toplogin li .dropdown-menu {
+    right: 0;
+    min-width: 160px;
+	left:inherit;
+	margin: 0px 0 0;
+}
+
+.navbar-inverse .navbar-collapse{
+    border-color: #36394c;
+	background:#FFFFFF;
+	padding:15px;
+}
+ul.nav.navbar-nav.side-nav li {
+ width:100%;
+ float:left;
+ display:inline-block;
+}
+#page-wrapper {
+    position: relative;
+    margin-top: 100px;
+}
+.maintabsBox {
+    padding: 0px 15px;
+}
+ul.navbar-nav.dashnav {
+  margin: 7.5px 0px;
+}
+
+ul.navbar-nav.dashnav li {
+    margin-right: 0px;
+}
+.dashinnerview {
+    padding: 30px 0px 0px 0px;
+}
+.dashinnerview .chartbox {
+ margin-bottom:30px;
+}
+.mb-pad-lt-rt {
+ padding-right: 0px;
+ padding-left: 0px;
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 300px;
+}
+
+
+
+
+
+.maintabsBox > .nav-tabs {
+    display: inline-block;
+    float: left;
+}
+.maintabsBox > .nav-tabs > li {
+    margin-right: 0px;
+    width: 100%;
+    display: inline-block;
+}
+ 
+.maintabsBox > .nav-tabs > li > a {
+    font-size: 15px;
+}
+
+
+.innertabssliderBox {
+    width: 100%;
+    margin: 20px 0px;
+}
+#progressbar {
+    width: 100%;
+}
+#progressbar li {
+    width: 20%;
+}
+ 
+.fielddata {
+    padding: 20px 20px;
+}
+ul.formLists li {
+    margin-bottom: 20px;
+}
+
+ul.formLists li:nth-child(odd) {
+    width: 100%;
+	float: none;
+}
+ul.formLists li:nth-child(even) {
+    width: 100%;
+    float: none;
+}
+ul.formLists {
+    padding: 12px 0px 0px;
+}
+
+.adjstForm fieldset {
+    position: relative;
+    height: 100%;
+}
+.adjstForm .next.action-button {
+    top: -20px;
+    right: 10px;
+}
+
+.adjstForm .previous.action-button {
+    top: -20px;
+    left: 10px;
+}
+
+ul.formLists li .inputLists {
+    height: auto;
+}
+.areacheck .checknewBox {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.fourthtab .lft {
+    width: 100%;
+}
+.fourthtab .lft .contactpersn {
+    margin-top: 20px;
+    padding-left: 0px;
+}
+.emp_scroll {
+    height: 300px !important;
+    width: 100%;
+    padding: 15px;
+}
+.fourthtab .rtd {
+    width: 100%;
+}
+
+.adjstForm .continue.action-button {
+    bottom: -50px;
+    left: -40px;
+    top: auto;
+}
+.adjstForm .save.action-button {
+    bottom: -50px;
+    right: 0px;
+    top: auto;
+}
+ul.formLists li .inputLists .checkinput {
+    position: absolute;
+}
+
+
+.tab-content .innerview {
+    padding: 30px 0px 0px 0px;
+}
+
+.scrolldiv {
+width:1200px;
+overflow-y:hidden; 
+} 
+.divfix {
+width:100%;
+display:inline-block;
+} 
+
+
+.createTop.payselect .selectpaybox {
+    width: 46%;
+}
+.adjstForm .whitebg {
+   background: url(../images/step-top-bg.png) left 2px no-repeat;
+   background-size: 100%;
+     padding-top: 26px;
+}
+ 
+}
+
+
+@media (max-width:375px) { 
+.createTop ul.creatbutns li a .smallicons {
+ display:none;
+}
+.createTop ul.creatbutns li a {
+ padding: 8px 8px;
+}
+.createTop ul.creatbutns li a small {
+    font-size: 13px;
+}
+
+.largepopup {
+    width: 100%;
+    margin-left: -50%;
+}
+.largepopup .innerpopup .innermiddle {
+    padding: 10px 10px 0px 10px;
+}
+.largepopup .innerpopup .innermiddle .clientnames {
+    line-height: 24px;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    height: 46px;
+}
+.largepopup .innerpopup .innermiddle dl.clientinfo dd {
+    font-size: 14px;
+}
+
+.createTop ul.creatbutns li {
+    width: 100%;
+}
+.createTop .expanding {
+    width: 100%;
+    z-index: 999999;
+}
+
+
+
+.gallerypagination {
+    width: 23%;
+    left: 0.6%;
+    bottom: -114px !important;
+    z-index: 99 !important;
+}
+
+.paydata .totalboxcound {
+    width:23%;
+    left: 0.6%;
+    bottom: -94px !important;
+    z-index: 99 !important;
+}
+
+.loginmiddle {
+    width: 90%;
+}
+.loginview .form .layertop {
+    padding: 20px;
+}
+.loginview .tab-group {
+    margin: 0 0 20px 20px;
+}
+.loginview .checkbox {
+    width: 80%;
+}
+.loginview .forgot {
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.adjstForm .whitebg {
+   background: url(../images/step-top-bg.png) left 6px no-repeat;
+   background-size: 100%;
+}
+}
+
+
+@media (max-width:330px) { 
+.createTop ul.creatbutns li {
+    margin-right: 4px;
+}
+.createTop ul.creatbutns li a small {
+    font-size: 11px;
+}
+}

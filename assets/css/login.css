@@ -1,0 +1,377 @@
+.loginmiddle {
+ width:40%;
+ margin:0 auto;
+}
+.loginbgds {
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#595d72+0,35384a+40 */
+background: rgb(89,93,114); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(89,93,114,1) 0%, rgba(53,56,74,1) 40%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(89,93,114,1) 0%,rgba(53,56,74,1) 40%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(89,93,114,1) 0%,rgba(53,56,74,1) 40%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#595d72', endColorstr='#35384a',GradientType=1 ); /* IE6-9 */
+overflow-x: hidden;
+}
+.loginview .form {
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    /*-webkit-box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);*/
+    display: inline-block;
+	position:relative;
+}
+.loginview .form .layer {
+ position:absolute;
+ left:0px;
+ top:0px;
+ display:inline-block;
+ height:100%;
+ width:100%;
+ z-index:1;
+ background:url(../images/new-login-bg1.jpg) no-repeat 55% 30px fixed;
+ background-size: auto 100%; 
+ opacity:1;
+     border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.loginview .form .layertop {
+ position: relative;
+ left:0px;
+ bottom:0px;
+ display:inline-block;
+ float:left;
+ width:100%;
+ height:100%;
+ z-index:9;
+ padding: 40px 40px 20px 40px;
+ border-radius: 3px;
+ -moz-border-radius: 3px;
+ -webkit-border-radius: 3px;
+}
+.loginview .tab-group {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 60px 0px;
+    display: inline-block;
+    width: 100%;
+}
+.loginview .tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.loginview .tab-group li a {
+  display: block;
+  text-decoration: none;
+  color: #74757f;
+  float: left;
+  text-align: center;
+  cursor: auto;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  border-bottom:2px solid transparent;
+  text-transform:uppercase;
+  margin-right:20px;
+  padding-bottom:5px;
+  letter-spacing:1px;
+  font-size:16px;
+}
+/*.loginview .tab-group li a:hover {
+  border-bottom:2px solid #4f64a8;
+  color: #ffffff;
+}*/
+.loginview .tab-group .active a {
+  color: #000;
+  border-bottom:2px solid #4980ff;
+}
+
+.loginview .tab-content > div:last-child {
+  display: none;
+}
+
+ 
+.loginview label {
+  position: relative;
+  -webkit-transform: translateY(6px);
+  transform: translateY(6px);
+  color: #bdbdbd;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  text-transform:uppercase;
+  font-size:11px;
+  display:inline-block;
+  width: 100%;
+  letter-spacing: 1.4px;
+  margin-bottom:8px;
+  line-height:18px;
+}
+.loginview label .req {
+  margin: 2px;
+  color: #1ab188;
+}
+
+/*.loginview label.active {
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}*/
+.loginview label.active .req {
+  opacity: 0;
+}
+
+.loginview label.highlight {
+  color: #4980ff;
+}
+
+.loginview input, .loginview textarea {
+  font-size: 14px;
+  display: inline-block;
+  width: 100%;
+  height: 36px;
+  background:transparent;
+  color: #000;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, -webkit-box-shadow .25s ease;
+  transition: border-color .25s ease, -webkit-box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease, -webkit-box-shadow .25s ease;
+  float:left;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border-bottom:1px solid #c5c9cc;
+  line-height: 120%;
+}
+.loginview input:focus, .loginview textarea:focus {
+  outline: 0;
+  border-bottom:1px solid #488aee;
+}
+
+.loginview textarea {
+    resize: none;
+	 -webkit-border-radius: 0px;
+    -moz-border-radius:0px;
+    border-radius: 0px;
+	padding-top:10px;
+}
+
+.loginview .field-wrap {
+    position: relative;
+    margin-bottom: 18px;
+    display: inline-block;
+    float: left;
+    width: 100%;
+}
+
+.loginview .field-wrap:last-child {
+ margin-bottom:0px;
+}
+.loginview .top-row {
+ width:100%;
+ display:inline-block;
+ float:left;
+}
+.loginview .top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.loginview .top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.loginview .top-row > div:last-child {
+  margin: 0;
+}
+
+.loginview .button {
+  border: 0;
+  outline: none;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  color: #35384b;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  border-radius: 22px;
+  background:none;
+  text-align:center;
+  border: 2px solid #bdbdbd;
+  font-weight: bold;
+  letter-spacing:0.4px;
+}
+.loginview .button:hover, .button:focus {
+  background: #4980ff;
+  border: 2px solid #4980ff;
+   color: #f8f8f8;
+}
+
+.loginview .button-block {
+  display: block;
+  width: 100%;
+}
+
+.loginview .forgot {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+.loginview .forgot a {
+ display:inline-block;
+ color:#bdbdbd;
+}
+
+
+.loginview .checkbox {
+    padding-left: 20px;
+    display: inline-block;
+    width: 48%;
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.loginview .checkbox label {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px;
+	color:#bdbdbd;
+	letter-spacing: 1.2px;
+	}
+.loginview .checkbox label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    margin-left: -20px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out; }
+.loginview .checkbox label::after {
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 0;
+    margin-left: -20px;
+    padding-left: 3px;
+    padding-top: 1px;
+    font-size: 11px;
+    color: #555555; }
+.loginview .checkbox input[type="checkbox"] {
+    opacity: 0;margin-top:0px; }
+.loginview .checkbox input[type="checkbox"]:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+.loginview .checkbox input[type="checkbox"]:checked + label::after {
+    font-family: 'FontAwesome';
+    content: "\f00c"; 
+	line-height: 16px;
+	font-weight:bold;
+	}
+.loginview .checkbox input[type="checkbox"]:disabled + label {
+    opacity: 0.65; }
+.loginview .checkbox input[type="checkbox"]:disabled + label::before {
+    background-color: #eeeeee;
+    cursor: not-allowed; }
+.loginview .checkbox.checkbox-circle label::before {
+    border-radius: 50%; }
+.loginview .checkbox.checkbox-inline {
+    margin-top: 0; }
+
+.loginview .checkbox-primary input[type="checkbox"]:checked + label::before {
+    background-color: #4980ff;
+    border-color: #4980ff; }
+.loginview .checkbox-primary input[type="checkbox"]:checked + label::after {
+    color: #fff; }
+
+.loginview .button-block.signmrgtop {
+ margin-top:20px;
+ display:inline-block;
+ float:left;
+}
+
+.loginmiddle.signupmain {
+    width: 80%;
+}
+.loginmiddle.signupmain .tab-group {
+    margin: 0 0 30px 0px;
+}
+
+.loginmiddle.signupmain .form {
+    margin: 20px auto;
+}
+
+.loginmiddle.signupmain .form .layertop {
+ padding:30px;
+}
+.loginmiddle.signupmain .top-row > div {
+  float: left;
+  width: 31.2%;
+  margin-right: 3%;
+}
+.loginview .top-row .field-wrap:last-child {
+ margin-right:0px;
+}
+
+.loginmiddle.signupmain .checkbox {
+    padding-left: 20px;
+    width: 100%;
+	margin-bottom:0px;
+	background: transparent;
+	-webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    padding-top: 3px;
+    padding-bottom: 13px;
+	border-bottom: 1px solid #87878b;
+}
+
+.loginmiddle.signupmain .checkbox  label {
+    color: #74757f;
+	margin-bottom:0px;
+}
+
+.loginmiddle .fblogologin {
+ width:100%;
+ display:inline-block;
+ text-align:center;
+ float:left;
+ margin-bottom: 20px;
+}
+
+.loginmiddle .fblogo {
+    display: inline-block;
+    position: relative;
+    left: -22px;
+}
+ 
+.loginview .form .layertop .forgottext {
+ display:inline-block;
+ float:left;
+ width:100%;
+ color: #74757f;
+ line-height:18px;
+ margin-bottom:20px;
+}
+.loginview .tab-group.forgot-mrg {
+ margin-bottom:50px;
+}

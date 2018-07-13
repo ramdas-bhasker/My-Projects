@@ -1,0 +1,120 @@
+ul.formLists li .inputLists.uploadBox {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    position: relative;
+	height:auto;
+	border-bottom:none;
+}
+.preview-images-zone {
+    position: relative;
+    overflow: auto;
+    display: inline-block;
+    float: left;
+    z-index: 9999;
+    margin-left: 20px;
+}
+.preview-images-zone > .preview-image:first-child {
+    height: 90px;
+    width: 90px;
+    position: relative;
+    margin-right: 5px;
+}
+.preview-images-zone > .preview-image {
+    height: 90px;
+    width: 90px;
+    position: relative;
+    margin-right: 5px;
+    float: left;
+    margin-bottom: 5px;
+}
+.preview-images-zone > .preview-image > .image-zone {
+    width: 100%;
+   /* height: 100%;*/
+}
+.preview-images-zone > .preview-image > .image-zone > img {
+    width: 100%;
+    /*height: 100%;*/
+}
+.preview-images-zone > .preview-image > .tools-edit-image {
+    position: absolute;
+    z-index: 100;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    display: none;
+}
+.preview-images-zone > .preview-image > .image-cancel {
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+}
+.preview-image:hover > .image-zone {
+    cursor: move;
+    opacity: .5;
+}
+.preview-image:hover > .tools-edit-image,
+.preview-image:hover > .image-cancel {
+    display: block;
+}
+.ui-sortable-helper {
+    width: 90px !important;
+    height: 90px !important;
+}
+.loginview .top-row .field-wrap.fileup {
+ width:65%;
+ display:inline-block;
+}
+
+.uploadBox .form-group {
+    width: 48%;
+    float: left;
+	margin-bottom: 0px;
+}
+
+.uploadBox .form-group a.uploadbutton {
+    width: 100%;
+    padding: 30px 26px;
+	display:inline-block;
+	color: #74757f;
+	border:1px dashed #c5c9cd;
+	text-align: center;
+	-webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+}
+ 
+
+.loginview .button-block.uploadbtn {
+    background: #494a5f;
+    position: absolute;
+    top: 138px;
+    padding: 10px 0px;
+	z-index: 9;
+
+}
+.loginview .button-block.uploadbtn:hover, .loginview .button-block.uploadbtn:focus {
+  background: #6179d1;
+}
+
+
+.loginview .button-block.cancelbtn {
+  background:#4f65b6;
+
+}
+.loginview .button-block.cancelbtn:hover, .loginview .button-block.cancelbtn:focus {
+  background: #6179d1;
+}
+
+
+ul.formLists li .inputLists.uploadBox  .addbtn {
+    margin-top: 10px;
+}

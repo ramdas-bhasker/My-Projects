@@ -1,0 +1,896 @@
+/* SelectBoxIt container */
+.selectboxit-container {
+	position: relative;
+	display: block;
+	vertical-align: top;
+	width: auto;
+}
+/* Button */
+.selectboxit-container .selectboxit {
+	width: auto;/* Width of the dropdown button */
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+/* Height and Vertical Alignment of Text */
+.selectboxit-container span, .selectboxit-container .selectboxit-options a {
+	/* Height of the drop down */
+    line-height: 38px; /* Vertically positions the drop down text */
+	display: block;
+}
+/* Focus pseudo selector */
+.selectboxit-container .selectboxit:focus {
+	outline: 0;
+}
+/* Disabled Mouse Interaction */
+.selectboxit.selectboxit-disabled, .selectboxit-options .selectboxit-disabled {
+	opacity: 0.65;
+	filter: alpha(opacity=65);
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	cursor: default;
+}
+/* Button Text */
+.selectboxit-text {
+	text-indent: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	float: left;
+	font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+	font-weight:normal;
+	height:38px;
+	width: 85% !important;
+	max-width: 85% !important;
+}
+.selectboxit .selectboxit-option-icon-container {
+	margin-left: 5px;
+}
+/* Options List */
+.selectboxit-container .selectboxit-options {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	min-width: 100%;  /* Minimum Width of the dropdown list box options */
+   *width: 100%;
+	margin: -1px 0 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	overflow-x: hidden;
+	overflow-y: auto;
+	cursor: pointer;
+	display: none;
+	z-index: 90;
+	border-radius: 3px;
+	text-align: left;
+}
+/* Individual options */
+ .selectboxit-option .selectboxit-option-anchor {
+	display: block !important;
+	height: auto !important;
+	line-height: 16px !important;
+	padding: 8px 6px 8px 3px !important;
+}
+/* Individual Option Hover Action */
+.selectboxit-option .selectboxit-option-anchor:hover {
+	text-decoration: none;
+}
+/* Individual Option Optgroup Header */
+.selectboxit-option, .selectboxit-optgroup-header {
+	text-indent: 5px; /* Horizontal Positioning of the select box option text */
+	margin: 0;
+	list-style-type: none;
+}
+.selectboxit-option {
+	margin-bottom:0px !important;
+}
+/* The first Drop Down option */
+.selectboxit-option-first {
+	border-top-right-radius: 2px;
+	border-top-left-radius: 2px;
+}
+/* The first Drop Down option optgroup */
+.selectboxit-optgroup-header + .selectboxit-option-first {
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+}
+/* The last Drop Down option */
+.selectboxit-option-last {
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+/* Drop Down optgroup headers */
+.selectboxit-optgroup-header {
+	font-weight: bold;
+}
+/* Drop Down optgroup header hover psuedo class */
+.selectboxit-optgroup-header:hover {
+	cursor: default;
+}
+/* Drop Down down arrow container */
+.selectboxit-arrow-container {
+	/* Positions the down arrow */
+  width: 28px;
+	position: absolute;
+	right: 0;
+	height:38px;
+}
+/* Drop Down down arrow */
+.selectboxit .selectboxit-arrow-container .selectboxit-arrow {
+	/* Horizontally centers the down arrow */
+  margin: 0 auto;
+	position: absolute;
+	top: 45%;
+	right: 6px;
+	left: 0;
+}
+/* Drop Down down arrow for jQueryUI and jQuery Mobile */
+.selectboxit .selectboxit-arrow-container .selectboxit-arrow.ui-icon {
+	top: 30%;
+}
+/* Drop Down individual option icon positioning */
+.selectboxit-option-icon-container {
+	float: left;
+}
+.selectboxit-container .selectboxit-option-icon {
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+/* Drop Down individual option icon positioning */
+.selectboxit-option-icon-url {
+	width: 18px;
+	background-size: 18px 18px;
+	background-repeat: no-repeat;
+	height: 100%;
+	background-position: center;
+	float: left;
+}
+.selectboxit-rendering {
+	display: inline-block !important;
+ *display: inline !important;
+	zoom: 1 !important;
+	visibility: visible !important;
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+}
+/* jQueryUI and jQuery Mobile compatability fix - Feel free to remove this style if you are not using jQuery Mobile */
+.jqueryui .ui-icon {
+	background-color: inherit;
+}
+/* Another jQueryUI and jQuery Mobile compatability fix - Feel free to remove this style if you are not using jQuery Mobile */
+.jqueryui .ui-icon-triangle-1-s {
+	background-position: -64px -16px;
+}
+/*
+  Default Theme
+  -------------
+  Note: Feel free to remove all of the CSS underneath this line if you are not using the default theme
+*/
+.selectboxit-btn {
+	background: #fff;
+	border: 1px solid #d4dae2;
+	width:100% !important;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+	height: 38px;
+}
+.selectboxit-btn.selectboxit-enabled:hover, .selectboxit-btn.selectboxit-enabled:focus, .selectboxit-btn.selectboxit-enabled:active {
+	color: #333333;
+	background-color: #fafafa;
+}
+.selectboxit-btn.selectboxit-enabled:hover, .selectboxit-btn.selectboxit-enabled:focus {
+	color: #333333;
+	text-decoration: none;
+	background-position: 0 -15px;
+}
+.selectboxit-default-arrow {
+	width: 0;
+	height: 0;
+	border-top: 6px solid #aeaeaf;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+}
+.selectboxit-list {
+	background-color: #ffffff;
+	border: 1px solid #d4dae2;
+	width:100%;
+}
+.selectboxit-list .selectboxit-option-anchor {
+	color: #333333;
+}
+.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor {
+	/*color: #ffffff;*/
+  background-color: #fafafa;
+	background-repeat: repeat-x;
+}
+.selectboxit-list > .selectboxit-disabled > .selectboxit-option-anchor {
+	color: #999999;
+}
+.selectboxit-open .selectboxit-default-arrow {
+	width: 0;
+	height: 0;
+	border-bottom: 6px solid #aeaeaf;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+	border-top: none;
+}
+
+
+
+
+
+
+
+
+
+.selectprioirty .selectboxit-btn {
+	height:auto;
+	border:none;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+.selectprioirty .selectboxit-container .selectboxit {
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+.selectprioirty .selectboxit-container span, .selectprioirty .selectboxit-options a {
+	line-height: 22px;
+}
+.selectprioirty .selectboxit-text {
+	font-family: "Helvetica neue", Helvetica, Arial, sans-serif;
+}
+.selectprioirty .selectboxit-text {
+	height:26px;
+	width: 78% !important;
+	max-width: 78% !important;
+	text-indent: 8px;
+}
+.selectprioirty .selectboxit-container span {
+ height: 21px;
+}
+
+.selectprioirty .selectboxit-btn.selectboxit-enabled:hover, .selectprioirty .selectboxit-btn.selectboxit-enabled:focus, .selectprioirty .selectboxit-btn.selectboxit-enabled:active {
+	color: #333333;
+	background-color: transparent;
+}
+
+
+.selectprioirty .selectboxit .selectboxit-option-icon-container {
+    margin-left: 0px;
+}
+
+
+
+
+
+.selectListrare {
+ width:100%;
+ display:inline-block;
+ float:left;
+}
+
+
+.selectListrare .selectboxit-btn {
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(250,250,250,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(250,250,250,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(250,250,250,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fafafa',GradientType=0 ); /* IE6-9 */
+
+	border: 1px solid #e6eaee;
+	width:100% !important;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+	height: 40px;
+}
+ 
+.selectListrare .selectboxit-container span, .selectListrare .selectboxit-container .selectboxit-options a {
+  line-height: 36px;
+  display: block;
+} 
+
+.selectListrare .selectboxit-text {
+  height:38px;
+}
+
+.selectListrare .selectboxit-arrow-container {
+ height:38px;
+}
+.selectListrare .selectboxit-container .selectboxit {
+     border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.selectListrare .selectboxit-btn.selectboxit-enabled:hover, .selectListrare .selectboxit-btn.selectboxit-enabled:focus, .selectListrare .selectboxit-btn.selectboxit-enabled:active {
+	color: #333333;
+	background: rgb(250,250,250); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(250,250,250,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(250,250,250,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(250,250,250,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.selectListrare .selectboxit-btn.selectboxit-enabled:hover, .selectListrare .selectboxit-btn.selectboxit-enabled:focus {
+	color: #333333;
+	text-decoration: none;
+	background: rgb(250,250,250); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(250,250,250,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(250,250,250,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(250,250,250,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+.locationarea .selectboxit-list {
+    max-height: 300px !important;
+}
+
+
+.selecttemplate .selectboxit-container .selectboxit {
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+
+.selecttemplate .selectboxit-text {
+	font-family: "Helvetica neue", Helvetica, Arial, sans-serif;
+	font-size:16px;
+	text-indent: 16px;
+}
+.selecttemplate .selectboxit-option .selectboxit-option-anchor {
+	padding: 8px 6px 8px 11px !important;
+	font-size:16px;
+}
+
+
+.inputLists .selectboxit-btn {
+ height:36px;
+ border: none;
+ box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+	background:none;
+}
+.inputLists .selectboxit-container span {
+ line-height:34px;
+}
+
+.inputLists .selectboxit-arrow-container {
+ height:34px;
+}
+
+.inputLists .selectboxit-text {
+ font-family: "Helvetica neue", Helvetica, Arial, sans-serif;
+ font-size:14px;
+ text-indent: 0px;
+ height: 36px;
+}
+
+.inputLists .selectboxit-option {
+ width:100% !important;
+ margin-right:0px;
+ padding-left:10px;
+min-height: auto;
+}
+
+
+
+
+
+
+
+
+/*TeamSelect*/
+.selectimg {
+    height:34px;
+	float:left;
+	display:inline-block;
+	margin-right:10px;
+	width:100%;
+}
+.selectimg .selectboxit-container {
+  width: auto;
+}
+
+.selectimg .selectboxit-btn {
+ background:#fff !important;
+ line-height:26px !important;
+ height:34px !important;
+ box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  width:100%;
+  padding:3px 0px;
+  border: none;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+}
+
+.selectimg .selectboxit-text {
+ font-family:Helvetica neue, Helvetica, Arial, sans-serif !important;
+ color: #1f2020;
+ line-height:28px !important;
+ height:26px !important;
+ max-width: 70% !important;
+ text-indent:0px;
+ 
+}
+ 
+.selectimg .selectboxit-list .selectboxit-option-anchor {
+  padding: 8px 8px !important;
+    color: #333333;
+    height: 30px !important;
+    line-height: 14px !important;
+}
+
+.selectimg .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor {
+  color: #000 !important;
+}
+ 
+.selectimg .selectboxit .selectboxit-option-icon-container {
+    height: 20px !important;
+    line-height: 20px !important;
+    margin-left: 0px;
+    margin-top: 4px;
+    margin-right: 9px;
+}
+ 
+.selectimg .selectboxit-arrow-container {
+    height: 20px !important;
+    line-height: 26px !important;
+    width: 18px !important;
+    float: right;
+    text-align: center;
+	position:inherit;
+}
+
+.selectimg .selectboxit .selectboxit-arrow-container .selectboxit-arrow {
+    margin: 0;
+    position: inherit;
+    top: 10px;
+    right: 0;
+    left: 0;
+    line-height: 0px;
+}
+
+.selectimg .selectboxit-default-arrow {
+  border-top: 5px solid #a2a1a1;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+.selectimg .selectboxit-container span, .teamSelect .selectboxit-container .selectboxit-options a {
+    height: 18px;
+    line-height: 18px;
+    display: block;
+}
+
+.selectimg .selectboxit-option-icon-url {
+    width: 22px;
+    background-size: 72%;
+}
+
+.selectimg .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor {
+  background-color: #ededed;
+}
+.selectimg .selectboxit-list {
+  background-color: #ffffff;
+  border: 1px solid #d0cece;
+  min-width: 63px !important;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+}
+
+.selectimg .selectboxit-option {
+ width:100% !important;
+ margin-right:0px;
+ padding-left:0px;
+}
+
+/*End TeamSelect*/
+
+
+
+.selectpaybox .selectboxit-btn {
+ display:inline-block;
+ width:100%;
+ height:38px;
+ background:#595e6e;
+ border-radius:4px;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+padding:8px 15px;
+box-shadow: 2px 2px 8px rgba(53, 56, 74, 0.2);
+-moz-box-shadow: 2px 2px 8px rgba(53, 56, 74, 0.2);
+ -webkit-box-shadow: 2px 2px 8px rgba(53, 56, 74, 0.2);
+ border:2px solid #595e6e;
+ -webkit-transition: all 70ms ease-in-out;
+ -moz-transition: all 70ms ease-in-out;
+ -ms-transition: all 70ms ease-in-out;
+ transition: all 70ms ease-in-out;
+}
+
+.selectpaybox .selectboxit-text {
+    text-indent: 0px;
+	height: 18px;
+	line-height: 18px;
+    width: 85% !important;
+    max-width: 85% !important;
+	color: #959bba;
+	font-size:16px;
+	font-family:Helvetica neue, Helvetica, Arial, sans-serif !important;
+}
+
+.selectpaybox .selectboxit-arrow-container {
+    height: 16px;
+	line-height: 16px;
+}
+
+.selectpaybox .selectboxit-default-arrow {
+	width: 0;
+	height: 0;
+	border-top: 6px solid #8388a4;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+}
+ 
+.selectpaybox .selectboxit-open .selectboxit-default-arrow {
+	width: 0;
+	height: 0;
+	border-bottom: 6px solid #8388a4;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+	border-top: none;
+} 
+
+.selectpaybox .selectboxit-btn.selectboxit-enabled:hover, .selectpaybox .selectboxit-btn.selectboxit-enabled:focus, .selectpaybox .selectboxit-btn.selectboxit-enabled:active {
+ background:#4880ff;
+ border:2px solid #4880ff;
+ -webkit-transition: all 200ms ease-in-out;
+ -moz-transition: all 200ms ease-in-out;
+ -ms-transition: all 200ms ease-in-out;
+ transition: all 200ms ease-in-out;
+}
+
+.selectpaybox .selectboxit-btn.selectboxit-enabled:hover .selectboxit-text, .selectpaybox .selectboxit-btn.selectboxit-enabled:focus .selectboxit-text, .selectpaybox .selectboxit-btn.selectboxit-enabled:active .selectboxit-text {
+ color:#FFFFFF;
+}
+
+/*.selectpaybox .selectboxit-btn.selectboxit-enabled:hover .selectboxit-default-arrow, .selectpaybox .selectboxit-btn.selectboxit-enabled:focus .selectboxit-default-arrow, .selectpaybox .selectboxit-btn.selectboxit-enabled:active .selectboxit-default-arrow {
+ 	width: 0;
+	height: 0;
+	border-top: 6px solid #fff;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+}*/
+
+.selectpaybox .selectboxit-enabled:hover .selectboxit-default-arrow, .selectpaybox .selectboxit-enabled:focus .selectboxit-default-arrow, .selectpaybox .selectboxit-enabled:active .selectboxit-default-arrow {
+ 	width: 0;
+	height: 0;
+	border-bottom: 6px solid #ffffff;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+	border-top: none;
+}
+
+
+.selectpaybox .selectboxit-list {
+ background:#4880ff;
+ border-radius:0px 0 4px 4px;
+-moz-border-radius:0px 0 4px 4px;
+-webkit-border-radius:0px 0 4px 4px;
+box-shadow: 2px 2px 8px rgba(53, 56, 74, 0.2);
+-moz-box-shadow: 2px 2px 8px rgba(53, 56, 74, 0.2);
+ -webkit-box-shadow: 2px 2px 8px rgba(53, 56, 74, 0.2);
+ border:1px solid #4880ff;
+ -webkit-transition: all 70ms ease-in-out;
+ -moz-transition: all 70ms ease-in-out;
+ -ms-transition: all 70ms ease-in-out;
+ transition: all 70ms ease-in-out;
+margin: -6px 0 0;
+
+}
+
+.selectpaybox .selectboxit-list .selectboxit-option-anchor {
+    color: #b6ccff;
+	position:relative;
+	text-indent:15px;
+	 background: url(../images/select-ckeckmark.png) no-repeat;
+	 background-position:5px 14px;
+}
+.selectpaybox .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor {
+  color: #ffffff;
+  background:  #3e72f5 url(../images/select-ckeckmark.png) no-repeat;
+  background-position: 5px -17px;
+  
+  box-shadow: 0px 0px 6px rgba(53, 56, 74, 0.1) inset;
+ -moz-box-shadow: 0px 0px 6px rgba(53, 56, 74, 0.1) inset;
+ -webkit-box-shadow: 0px 0px 6px rgba(53, 56, 74, 0.1) inset;
+
+}
+
+
+
+ .selectpaybox .selectboxit-option .selectboxit-option-anchor {
+	padding: 12px 6px 12px 11px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.callassignbox .selectboxit-container {
+    width: 100%;
+}
+
+.callassignbox .selectboxit-option {
+    margin-right:0px;
+	width:100%;
+}
+.callassignbox .selectboxit-btn {
+ display:inline-block;
+ width:100%;
+ height:38px;
+ background:#595e6e;
+ border-radius:4px;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+padding:8px 15px;
+box-shadow: 2px 2px 8px rgba(53, 56, 74, 0.2);
+-moz-box-shadow: 2px 2px 8px rgba(53, 56, 74, 0.2);
+ -webkit-box-shadow: 2px 2px 8px rgba(53, 56, 74, 0.2);
+ border:2px solid #595e6e;
+ -webkit-transition: all 70ms ease-in-out;
+ -moz-transition: all 70ms ease-in-out;
+ -ms-transition: all 70ms ease-in-out;
+ transition: all 70ms ease-in-out;
+}
+
+.callassignbox .selectboxit-text {
+    text-indent: 0px;
+	height: 18px;
+	line-height: 18px;
+    width: 85% !important;
+    max-width: 85% !important;
+	color: #959bba;
+	font-size:16px;
+	font-family:Helvetica neue, Helvetica, Arial, sans-serif !important;
+}
+
+.callassignbox .selectboxit-arrow-container {
+    height: 16px;
+	line-height: 16px;
+}
+
+.callassignbox .selectboxit-default-arrow {
+	width: 0;
+	height: 0;
+	border-top: 6px solid #8388a4;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+}
+ 
+.callassignbox .selectboxit-open .selectboxit-default-arrow {
+	width: 0;
+	height: 0;
+	border-bottom: 6px solid #8388a4;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+	border-top: none;
+} 
+
+.callassignbox .selectboxit-btn.selectboxit-enabled:hover, .callassignbox .selectboxit-btn.selectboxit-enabled:focus, .callassignbox .selectboxit-btn.selectboxit-enabled:active {
+ background:#4880ff;
+ border:2px solid #4880ff;
+ -webkit-transition: all 200ms ease-in-out;
+ -moz-transition: all 200ms ease-in-out;
+ -ms-transition: all 200ms ease-in-out;
+ transition: all 200ms ease-in-out;
+}
+
+.callassignbox .selectboxit-btn.selectboxit-enabled:hover .selectboxit-text, .callassignbox .selectboxit-btn.selectboxit-enabled:focus .selectboxit-text, .callassignbox .selectboxit-btn.selectboxit-enabled:active .selectboxit-text {
+ color:#FFFFFF;
+}
+
+/*.selectpaybox .selectboxit-btn.selectboxit-enabled:hover .selectboxit-default-arrow, .selectpaybox .selectboxit-btn.selectboxit-enabled:focus .selectboxit-default-arrow, .selectpaybox .selectboxit-btn.selectboxit-enabled:active .selectboxit-default-arrow {
+ 	width: 0;
+	height: 0;
+	border-top: 6px solid #fff;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+}*/
+
+.callassignbox .selectboxit-enabled:hover .selectboxit-default-arrow, .callassignbox .selectboxit-enabled:focus .selectboxit-default-arrow, .callassignbox .selectboxit-enabled:active .selectboxit-default-arrow {
+ 	width: 0;
+	height: 0;
+	border-bottom: 6px solid #ffffff;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+	border-top: none;
+}
+
+
+.callassignbox .selectboxit-list {
+ background:#4880ff;
+ border-radius:0px 0 4px 4px;
+-moz-border-radius:0px 0 4px 4px;
+-webkit-border-radius:0px 0 4px 4px;
+box-shadow: 2px 2px 8px rgba(53, 56, 74, 0.2);
+-moz-box-shadow: 2px 2px 8px rgba(53, 56, 74, 0.2);
+ -webkit-box-shadow: 2px 2px 8px rgba(53, 56, 74, 0.2);
+ border:1px solid #4880ff;
+ -webkit-transition: all 70ms ease-in-out;
+ -moz-transition: all 70ms ease-in-out;
+ -ms-transition: all 70ms ease-in-out;
+ transition: all 70ms ease-in-out;
+margin: -6px 0 0;
+
+}
+
+.callassignbox .selectboxit-list .selectboxit-option-anchor {
+    color: #b6ccff;
+	position:relative;
+	text-indent:15px;
+	 background: url(../images/select-ckeckmark.png) no-repeat;
+	 background-position:5px 14px;
+}
+
+.callassignbox .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor {
+  color: #ffffff;
+  background:  #3e72f5 url(../images/select-ckeckmark.png) no-repeat;
+  background-position: 5px -17px;
+  box-shadow: 0px 0px 6px rgba(53, 56, 74, 0.1) inset;
+ -moz-box-shadow: 0px 0px 6px rgba(53, 56, 74, 0.1) inset;
+ -webkit-box-shadow: 0px 0px 6px rgba(53, 56, 74, 0.1) inset;
+
+}
+
+.callassignbox .selectboxit-option .selectboxit-option-anchor {
+	padding: 12px 6px 12px 11px !important;
+}
+
+
+
+
+
+
+
+
+
+
+.field-wrap .selectboxit-btn {
+  font-size: 16px;
+  display: inline-block;
+  width: 100%;
+  height: 38px;
+  padding: 10px 20px 10px 0px;
+  background:transparent;
+  color: #ececee;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, -webkit-box-shadow .25s ease;
+  transition: border-color .25s ease, -webkit-box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease, -webkit-box-shadow .25s ease;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border:none;
+  border-bottom: 1px solid #87878b;
+}
+
+.field-wrap .selectboxit-text {
+    text-indent: 0px;
+	height: 18px;
+	line-height: 18px;
+    width: 95% !important;
+    max-width: 95% !important;
+	color: #74757f;
+	font-size:14px;
+	font-family:Helvetica neue, Helvetica, Arial, sans-serif !important;
+}
+
+.field-wrap .selectboxit-arrow-container {
+    height: 16px;
+	line-height: 16px;
+}
+
+.field-wrap .selectboxit-default-arrow {
+	width: 0;
+	height: 0;
+	border-top: 6px solid #74757f;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+}
+ 
+.field-wrap .selectboxit-open .selectboxit-default-arrow {
+	width: 0;
+	height: 0;
+	border-bottom: 6px solid #74757f;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+	border-top: none;
+} 
+
+.field-wrap .selectboxit-btn.selectboxit-enabled:hover, .field-wrap .selectboxit-btn.selectboxit-enabled:focus, .field-wrap .selectboxit-btn.selectboxit-enabled:active {
+ background:transparent;
+ border-bottom:1px solid #488aee;
+ -webkit-transition: all 200ms ease-in-out;
+ -moz-transition: all 200ms ease-in-out;
+ -ms-transition: all 200ms ease-in-out;
+ transition: all 200ms ease-in-out;
+}
+
+.field-wrap .selectboxit-btn.selectboxit-enabled:hover .selectboxit-text, .field-wrap .selectboxit-btn.selectboxit-enabled:focus .selectboxit-text, .field-wrap .selectboxit-btn.selectboxit-enabled:active .selectboxit-text {
+ color:#FFFFFF;
+}
+
+/*.selectpaybox .selectboxit-btn.selectboxit-enabled:hover .selectboxit-default-arrow, .selectpaybox .selectboxit-btn.selectboxit-enabled:focus .selectboxit-default-arrow, .selectpaybox .selectboxit-btn.selectboxit-enabled:active .selectboxit-default-arrow {
+ 	width: 0;
+	height: 0;
+	border-top: 6px solid #fff;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+}*/
+
+.field-wrap .selectboxit-enabled:hover .selectboxit-default-arrow, .field-wrap .selectboxit-enabled:focus .selectboxit-default-arrow, .field-wrap .selectboxit-enabled:active .selectboxit-default-arrow {
+ 	width: 0;
+	height: 0;
+	border-bottom: 6px solid #ffffff;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+	border-top: none;
+}
+
+
+.field-wrap .selectboxit-list {
+ background:rgba(66, 68, 90, 1);
+ border-radius:10px;
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+-webkit-transition: border-color .25s ease, -webkit-box-shadow .25s ease;
+  transition: border-color .25s ease, -webkit-box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease, -webkit-box-shadow .25s ease;
+ border: none;
+ -webkit-transition: all 70ms ease-in-out;
+ -moz-transition: all 70ms ease-in-out;
+ -ms-transition: all 70ms ease-in-out;
+ transition: all 70ms ease-in-out;
+
+}
+
+.field-wrap .selectboxit-list .selectboxit-option-anchor {
+    color: #74757f;
+}
+
+.field-wrap .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor {
+  color: #ffffff;
+  background-color: #6e7380;
+}
+
+.field-wrap .selectboxit-option .selectboxit-option-anchor {
+	padding: 8px 6px 8px 11px !important;
+}
